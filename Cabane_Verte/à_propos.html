@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>La Cabane Verte - Sur Nous</title>
+    <meta name="Author" content="Patrice Léveillé" />
+    <meta name="Description" content="Restaurant La Cabane Verte">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/fontawesome-all.css" rel="stylesheet">
+    <link href="Content/Styles.css" rel="stylesheet">
+
+    <style>
+        div[class*="col-"], section, aside, header, article, nav {
+            border: 1px solid black;
+            /*height: 80px;*/
+            text-align: center;
+        }
+
+        section, aside {
+            height: 950px;
+        }
+
+        nav, header {
+            height: 80px;
+        }
+
+        .container {
+            background-color:#ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <nav></nav>
+        </div>
+
+        <div class="row">
+            <section class="col-md-9">
+                <br>
+                <h2>Notre histoire</h2>
+                <p style="text-align:justify; font-weight:bold">
+                    Nous sommes un groupe d'amis végétaliens qui apprécions un bon repas accompagné d'excellentes bouteilles de bières ou de vin.
+                    Toutefois, puisque nous vivons dans des petites municipalités, les choix de restaurants végétaliens sont très restreints.
+                    C'est pourquoi nous avons décidé de partir notre propre resto-bar, qui, de plus, augmente les choix de restaurants dans les alentours.
+                </p> <br><br><br>
+
+                <h2>Motivation</h2>
+                <p style="text-align:justify; font-weight:bold">
+                    Nous croyons en le respect envers les animaux et nous voulons lutter contre la cruauté animale. De plus, d'un point de vue de santé et d'écologie, c'est bien plus avantageux.
+                    Notre but est donc d'offrir un menu complètement végétalien qui vous épâtera et qui vous fera oublier les autres restaurants.
+                </p>
+                <br>
+                <div>
+                    <img style="max-height:41%; max-width:41%; text-align:left" src="Images/homme_avec_lions.png" alt="Homme avec des lions">
+                    &emsp;&emsp;
+                    <img style="max-height:50%; max-width:50%; text-align:right" src="Images/femme_avec_loup.png" alt="Femme avec des loups">
+                </div>
+
+            </section>
+
+            <aside></aside>
+        </div>
+
+
+    </div>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/bootstrap.bundle.js"></script>
+
+    <script>
+        $.get('_menu.html', function (data) {
+            $('nav').replaceWith(data);
+            $("#choix5").addClass("active");
+        });
+        $.get('publicité.html', function (data) {
+            $('aside').replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

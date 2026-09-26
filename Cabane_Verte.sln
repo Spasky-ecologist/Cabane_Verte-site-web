@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12217.157 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Cabane_Verte", "Cabane_Verte\", "{ED3BE53F-9025-400C-A5C5-E09033E7A0C3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_8772"
+		Debug.AspNetCompiler.PhysicalPath = "Cabane_Verte\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8772\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_8772"
+		Release.AspNetCompiler.PhysicalPath = "Cabane_Verte\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8772\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8772"
+		SlnRelativePath = "Cabane_Verte\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED3BE53F-9025-400C-A5C5-E09033E7A0C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3BE53F-9025-400C-A5C5-E09033E7A0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08FA9085-AE0E-4E6B-B4A1-5FA5E85E1339}
+	EndGlobalSection
+EndGlobal

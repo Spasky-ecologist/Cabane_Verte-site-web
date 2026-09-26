@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>La Cabane Verte - Horaire</title>
+    <meta name="Author" content="Patrice Léveillé" />
+    <meta name="Description" content="Restaurant La Cabane Verte">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/fontawesome-all.css" rel="stylesheet">
+    <link href="Content/Styles.css" rel="stylesheet">
+
+    <style>
+        div[class*="col-"], section, aside, header, article, nav {
+            border: 1px solid black;
+            /*height: 80px;*/
+            text-align: center;
+        }
+
+        section, aside {
+            height: 950px;
+        }
+
+        nav, header {
+            height: 80px;
+        }
+
+        .container {
+            background-color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <nav></nav>
+        </div>
+
+        <div class="row">
+            <section class="col-md-9">
+                <br>
+                <h1>Heures d'ouverture</h1> <br>
+                <div class="row">
+                    <p style="font-weight:bold">
+                        &emsp; Lundi &emsp;&emsp;&emsp;&emsp; Mardi &emsp;&emsp;&emsp; Mercredi &emsp;&emsp;&emsp;&emsp; Jeudi &emsp;&emsp;&emsp;&emsp; Vendredi &emsp;&emsp;&emsp;&emsp; Samedi &emsp;&emsp;&emsp;&emsp; Dimanche
+                    </p>
+                </div>
+                <div class="row">
+                    <p>
+                        &emsp; 9h-22h &emsp;&emsp;&emsp; 9h-22h &emsp;&emsp;&emsp;&emsp; 9h-22h &emsp;&emsp;&emsp;&emsp; 9h-22h &emsp;&emsp;&emsp;&emsp; 9h-22h &emsp;&emsp;&emsp;&emsp;&ensp; 10h-23h &emsp;&emsp;&emsp;&emsp; 10h-23h
+                    </p>
+                </div> <br>
+
+                <div>
+                    <p>
+                        <span class="fa fa-map-marker-alt"></span> 5409 Avenue des hirondelles, Saint-Hyacinthe, QC <br>
+                        <span class="fa fa-phone-square"></span> (450)123-4567
+                    </p>
+                </div> <br>
+
+                <img src="Images/map.png" alt="Emplacement du restaurant">
+
+            </section>
+
+            <aside></aside>
+        </div>
+
+
+    </div>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/bootstrap.bundle.js"></script>
+
+    <script>
+        $.get('_menu.html', function (data) {
+            $('nav').replaceWith(data);
+            $("#choix6").addClass("active");
+        });
+        $.get('publicité.html', function (data) {
+            $('aside').replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

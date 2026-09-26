@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>La Cabane Verte</title>
+    <meta name="Author" content="Patrice Léveillé" />
+    <meta name="Description" content="Restaurant La Cabane Verte">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/fontawesome-all.css" rel="stylesheet">
+    <link href="Content/Styles.css" rel="stylesheet">
+
+    <style>
+        div[class*="col-"], section, aside, header, article, nav {
+            border: 1px solid black;
+            /*height: 80px;*/
+            text-align: center;
+        }
+
+        section, aside {
+            height: 950px;
+        }
+
+        nav, header {
+            height: 80px;
+        }
+
+        .container {
+            background-color:#ffffff;
+        }
+
+        .carousel-inner {
+            height: 300px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+        }
+
+        section {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <nav></nav>
+        </div>
+
+        <div class="row">
+            <section class="col-md-9">
+
+                <h1>Services offerts!</h1>
+                <p style="text-align:justify">
+                    &emsp;&emsp;&emsp;&emsp;<b>Faites chauffer vos plats dans le four &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Connexion Wi-Fi gratuite!</b><br>
+                    <img style="max-height:50%; max-width:50%" src="Images/four.png" alt="L'image n'a pas pu être affichée"> <img style="max-height:40%; max-width:40%" src="Images/WiFi_Logo.svg.png" alt="L'image n'a pas pu être affichée"> <!--height:250px; width:400px--> <!--height:200px; width:400px-->
+                </p>
+
+                <p style="text-align:left">
+                    &emsp; &emsp; &emsp; &emsp; <b>
+                        Relaxer dans la salle de détente! &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        Sandwichs divers, salades et sushis prêts à manger <br> Ordinateurs, sofas, bibliothèque et multiples tables!
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ou emporter!
+                    </b> <br> <br>
+                    &emsp; <img style="max-height:40%; max-width:40%" src="Images/Furniture-Design-TV-Room.png" alt="L'image n'a pas pu être affichée"> <!--height:250px; width:350px-->
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img style="max-height:35%; max-width:35%" src="Images/mre-v2-171018_drop_shadow_grey.png" alt="L'image n'a pas pu être affichée"> <!--height:250px; width:350px-->
+                </p>
+
+            </section>
+
+            <aside></aside>
+        </div>
+
+
+    </div>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/bootstrap.bundle.js"></script>
+
+    <script>
+        $.get('_menu.html', function (data) {
+            $('nav').replaceWith(data);
+            $("#choix1").addClass("active");
+        });
+        $.get('publicité.html', function (data) {
+            $('aside').replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

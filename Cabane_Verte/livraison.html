@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>La Cabane Verte - Livraison</title>
+    <meta name="Author" content="Patrice Léveillé" />
+    <meta name="Description" content="Restaurant La Cabane Verte">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/fontawesome-all.css" rel="stylesheet">
+    <link href="Content/Styles.css" rel="stylesheet">
+
+    <style>
+        section, aside, header, article, nav {
+            border: 1px solid black;
+            /*height: 80px;*/
+            text-align: center;
+        }
+
+        section, aside {
+            height: 950px;
+        }
+
+        nav, header {
+            height: 80px;
+        }
+
+        .container {
+            background-color:#ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <nav></nav>
+        </div>
+
+        <div class="row">
+            <section class="col-md-9">
+                <br>
+                <h1>Livraison</h1> <br>
+                <form id="emploi_app" action="mailto:cabaneverte@restaurant.com" method="post">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="entrées">Entrées:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control" name="entrées" id="entrées">
+                                <option disabled selected style="display:none">Choisissez vos entrées</option>
+                                <optgroup label="Soupes">
+                                    <option>Soupe aux lentilles</option>
+                                    <option>Soupe au cari</option>
+                                    <option>Soupe au broccoli</option>
+                                    <option>Soupe aux tomates</option>
+                                </optgroup>
+
+                                <optgroup label="Salades">
+                                    <option>Salade de quinoa</option>
+                                    <option>Salade au couscous</option>
+                                    <option>Salade aux avocats et pois chiches</option>
+                                </optgroup>
+
+                                <optgroup label="Autres">
+                                    <option>Rouleaux de printemps au tofu et cari</option>
+                                    <option>Pain à l'ail</option>
+                                    <option>Pain baguette avec hummus</option>
+                                    <option>Fruits frais</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control" name="entréesQ" id="entréesQ">
+                                <option disabled selected style="display:none">Qté</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="repas">Repas:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control" name="repas" id="repas">
+                                <option disabled selected style="display:none">Choisissez vos repas</option>
+                                <optgroup label="Pâtes et riz">
+                                    <option>Spaghetti</option>
+                                    <option>Pâtes à l’avocat</option>
+                                    <option>Penne à l’ail et tomates</option>
+                                    <option>Macaroni au fauxmage</option>
+                                    <option>Fettuccine alfredo</option>
+                                    <option>Tomates farcies au riz assaisonné</option>
+                                    <option>Riz au cari avec légumes sautés</option>
+                                    <option>Riz africain aux haricots</option>
+                                </optgroup>
+
+                                <optgroup label="Pizzas">
+                                    <option>Pizza thai au tofu et sauce aux arachides</option>
+                                    <option>Pizza au faux pepperoni</option>
+                                    <option>Pizza méditerranéenne</option>
+                                    <option>Pizza aux épinards</option>
+                                    <option>Pizza aux patates en escalopes</option>
+                                    <option>Pizza au faux poulet</option>
+                                </optgroup>
+
+                                <optgroup label="Tofu">
+                                    <option>Tofu à l’ail</option>
+                                    <option>Pommes et cannelle</option>
+                                    <option>Général Tao</option>
+                                    <option>Stir Fry au gingembre</option>
+                                    <option>Tofu à la sauce aux arachides</option>
+                                </optgroup>
+
+                                <optgroup label="Végé-viande">
+                                    <option>"Boeuf" Bourguignon</option>
+                                    <option>Côtes-levées</option>
+                                    <option>"Poulet" Parmesan</option>
+                                    <option>"Agneau" à la grecque</option>
+                                </optgroup>
+
+                                <optgroup label="Sandwichs">
+                                    <option>Grilled-Cheese</option>
+                                    <option>Sandwich aux avocats</option>
+                                    <option>Sandwich classique</option>
+                                    <option>Sandwich BLT</option>
+                                </optgroup>
+
+                                <optgroup label="Burgers">
+                                    <option>Burger au "poulet"</option>
+                                    <option>Burger au "boeuf"</option>
+                                    <option>Burger aux haricots noirs</option>
+                                    <option>Burger au tofu</option>
+                                    <option>Burger aux champignons</option>
+                                </optgroup>
+
+                                <optgroup label="Sushis">
+                                    <option>Avocat et mangue</option>
+                                    <option>Carotte et avocat</option>
+                                    <option>Avocat et concombre</option>
+                                    <option>Tofu épicé</option>
+                                    <option>Épinards et sésame</option>
+                                    <option>Shiitake, avocat et gingembre</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control" name="repasQ" id="repasQ">
+                                <option disabled selected style="display:none">Qté</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="desserts">Desserts:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control" name="desserts" id="desserts">
+                                <option disabled selected style="display:none">Choisissez vos desserts</option>
+                                <optgroup label="Crèmes glacées">
+                                    <option>Chocolat</option>
+                                    <option>Citron</option>
+                                    <option>Vanille</option>
+                                    <option>Fraise</option>
+                                    <option>Cannelle</option>
+                                </optgroup>
+
+                                <optgroup label="Tartes">
+                                    <option>Tarte aux bleuets</option>
+                                    <option>Tarte aux fraises</option>
+                                    <option>Tarte aux pommes</option>
+                                </optgroup>
+
+                                <optgroup label="Pains">
+                                    <option>Pain aux bananes</option>
+                                    <option>Pain aux bleuets</option>
+                                    <option>Pain au chocolat</option>
+                                    <option>Pain à la cannelle</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control" name="dessertsQ" id="dessertsQ">
+                                <option disabled selected style="display:none">Qté</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="breuvages">Breuvages:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control" name="breuvages" id="breuvages">
+                                <option disabled selected style="display:none">Choisissez vos breuvages</option>
+                                <option>Thé glacé</option>
+                                <option>Mountain Dew</option>
+                                <option>Racinette</option>
+                                <option>Café</option>
+                                <option>Thé</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control" name="breuvagesQ" id="breuvagesQ">
+                                <option disabled selected style="display:none">Qté</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="boissons">Boissons:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control" name="boissons" id="boissons">
+                                <option disabled selected style="display:none">Choisissez vos boissons</option>
+                                <optgroup label="Cafés">
+                                    <option>Café mexicain</option>
+                                    <option>Café écossais</option>
+                                    <option>Café bavarois</option>
+                                </optgroup>
+
+                                <optgroup label="Bières">
+                                    <option>Corona</option>
+                                    <option>Rickard's</option>
+                                    <option>Heineken</option>
+                                    <option>Stella Artois</option>
+                                </optgroup>
+
+                                <optgroup label="Vins">
+                                    <option>Bordeaux</option>
+                                    <option>Merlot</option>
+                                    <option>Pinot</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control" name="boissonsQ" id="boissonsQ">
+                                <option disabled selected style="display:none">Qté</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div> <br>
+
+                    <div class="row form-group">
+                        <div class="col-sm-7"></div>
+                        <div class="col-sm-5">
+                            <button id="reset" name="reset" type="reset" class="btn btn-primary">Reset</button>
+                            <button id="soumettre" name="soumettre" type="submit" class="btn btn-primary">Soumettre</button>
+                        </div>
+                    </div>
+                </form>
+
+                <br> <br> <br>
+                <img src="Images/delivery.png" alt="Livraison">
+
+            </section>
+
+            <aside></aside>
+        </div>
+
+
+    </div>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/bootstrap.bundle.js"></script>
+    <script src="/Scripts/jquery.validate.js"></script>
+
+    <script>
+        $.get('_menu.html', function (data) {
+            $('nav').replaceWith(data);
+            $("#choix4").addClass("active");
+        });
+        $.get('publicité.html', function (data) {
+            $('aside').replaceWith(data);
+        });
+        var validation = $("#emploi_app").validate({
+            rules: {
+                
+            },
+            messages: {
+
+            }
+        });
+        // Pour vider le formulaire correctement
+        $("button[type='reset']").click(function () {
+            validation.resetForm();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+﻿ /*Styles des menus horizontaux 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+ Couleurs du fond de la barre de menu 
+#menu.navbar {
+    background: linear-gradient(to bottom, #8f5522 0%, #5e3009 100%);
+    border-radius: 4px;
+}
+
+ Changer les styles associés au Brand 
+#menu .navbar-brand,
+#menu .navbar-collapse {
+    color: white;
+}
+
+ Permet de changer les styles d'un hyperlien 
+#menu .nav-link {
+    color: white;
+    line-height: 80px;  permet de définir la zone de clic
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ Permet de changer les styles d'un hyperlien s'il est actif (active)
+#menu .nav-item[class~="active"] .nav-link {
+    color: white;
+}
+
+#menu .nav-item[class~="active"] {
+    background-color: black;
+}
+
+ Survol de la souris 
+#menu .navbar-nav > li > a:hover,
+#menu .navbar-nav > li > a:focus {
+    color: black;
+    background-color: #e5aa76;
+}
+
+#menu .navbar-nav > li > .dropdown-menu {
+    background-color: #5e3009;
+    background-image: none;  Désactiver le gradient 
+    margin-top: -5px;  positionnement vertical 
+    margin-left: 10px;  positionnement horizontal 
+}
+
+    #menu .navbar-nav > li > .dropdown-menu a {
+        color: white;
+    }
+
+        #menu .navbar-nav > li > .dropdown-menu a:hover,
+        #menu .navbar-nav > li > .dropdown-menu a:focus {
+            color: black;
+            background-color: #e5aa76;
+            background-image: none;  Désactiver le gradient 
+        }
+
+#menu.navbar {
+    background: linear-gradient(to bottom, #8f5522 0%, #5e3009 100%);
+    border-radius: 4px;
+    padding: 0;
+    border: 0;
+}
+
+
+#menu .navbar-brand {
+    height: 80px;
+}*/

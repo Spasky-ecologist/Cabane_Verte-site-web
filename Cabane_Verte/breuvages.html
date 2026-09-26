@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>La Cabane Verte - Breuvages</title>
+    <meta name="Author" content="Patrice Léveillé" />
+    <meta name="Description" content="Restaurant La Cabane Verte">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/fontawesome-all.css" rel="stylesheet">
+    <link href="Content/Styles.css" rel="stylesheet">
+
+    <style>
+        div[class*="col-"], section, aside, header, article, nav {
+            border: 1px solid black;
+            /*height: 80px;*/
+            text-align: center;
+        }
+
+        section, aside {
+            height: 950px;
+        }
+
+        nav, header {
+            height: 80px;
+        }
+
+        .container {
+            background-color:#ffffff;
+        }
+
+        .carousel-inner {
+            height: 300px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <nav></nav>
+        </div>
+
+        <div class="row">
+            <section class="col-md-9">
+                <h1>Breuvages</h1> <hr style="border:solid">
+                <h2>Breuvages divers non-alcoolisés</h2>
+
+                <div id="annonces" class="carousel slide" data-ride="carousel" data-interval="10000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#annonces" data-slide-to="0" class="active"></li>
+                        <li data-target="#annonces" data-slide-to="1"></li>
+                        <li data-target="#annonces" data-slide-to="2"></li>
+                        <li data-target="#annonces" data-slide-to="3"></li>
+                        <li data-target="#annonces" data-slide-to="4"></li>
+                        <li data-target="#annonces" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" alt="Bannière #1" src="Images/drink_tea.png">
+                            <div class="carousel-caption">
+                                Thé glacé
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" alt="Bannière #2" src="/Images/drink_dew.png">
+                            <div class="carousel-caption">
+                                Mountain Dew
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" alt="Bannière #3" src="/Images/drink_rootbeer.png">
+                            <div class="carousel-caption">
+                                Racinette
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" alt="Bannière #4" src="/Images/drink_coffee.png">
+                            <div class="carousel-caption">
+                                Café
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" alt="Bannière #5" src="/Images/drink_tea_hot.png">
+                            <div class="carousel-caption">
+                                Thé
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" alt="Bannière #6" src="/Images/drink_water.png">
+                            <div class="carousel-caption">
+                                Eau
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#annonces" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#annonces" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <p style="text-align:justify; font-weight:bold;">
+                    • Thé glacé &emsp;&emsp;&emsp;&emsp; • Mountain Dew &emsp;&emsp;&emsp;&emsp; • Racinette &emsp;&emsp;&emsp;&emsp; • Café &emsp;&emsp;&emsp;&emsp; • Thé &emsp;&emsp;&emsp;&emsp; • Eau
+                </p>
+            </section>
+
+            <aside></aside>
+        </div>
+
+
+    </div>
+
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/bootstrap.bundle.js"></script>
+
+    <script>
+        $.get('_menu.html', function (data) {
+            $('nav').replaceWith(data);
+            $("#choix3").addClass("active");
+        });
+        $.get('publicité.html', function (data) {
+            $('aside').replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

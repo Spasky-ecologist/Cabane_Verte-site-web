@@ -1,0 +1,92 @@
+﻿#menu.navbar {
+    background-color: black !important;
+    border-radius: 4px;
+}
+
+/*Permet de changer les styles d'un hyperlien s'il est actif (active)*/
+#menu .nav-item[class~="active"] .nav-link {
+    color: #ce2b08;
+}
+
+#menu .nav-item[class~="active"] {
+    background-color: #520b0b;
+}
+
+/*Permet de changer les styles d'un hyperlien*/
+#menu .nav-link {
+    color: /*#B32A0D*/ #ce2b08;
+    line-height: 80px; /*permet de définir la zone de clic*/
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#menu .navbar-nav > li > .dropdown-menu {
+    background-color: black;
+    background-image: none; /*Désactiver le gradient*/
+    margin-top: -5px; /*positionnement vertical*/
+    margin-left: 10px; /*positionnement horizontal*/
+}
+
+    #menu .navbar-nav > li > .dropdown-menu a {
+        color: #ce2b08;
+    }
+
+        #menu .navbar-nav > li > .dropdown-menu a:hover,
+        #menu .navbar-nav > li > .dropdown-menu a:focus {
+            color: #ce2b08;
+            background-color: #601010;
+            background-image: none; /*Désactiver le gradient*/
+        }
+
+body {
+    background-image: url('../Images/macro-tree-trees-trunk-bark-blur-tree-sun-rays.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*Survol de la souris*/
+#menu .navbar-nav > li > a:hover,
+#menu .navbar-nav > li > a:focus {
+    color: #ce2b08;
+    background-color: #151313;
+}
+
+p {
+    color:#8e0a0a;
+}
+
+h1, h2 {
+    color: #8e0a0a;
+}
+
+.carousel-caption {
+    color: whitesmoke;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    opacity:1;
+}
+
+textarea {
+    color: #8e0a0a;
+}
+
+label {
+    color: #8e0a0a;
+    font-weight:bold;
+    text-align:justify
+}
+
+#submit {
+    text-align:right;
+}
+
+#Reset1 {
+    height: 35px;
+    text-align:right;
+    width:60px;
+}
